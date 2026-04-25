@@ -19,3 +19,9 @@ module "munki_repo" {
     Owner   = "nakib"
   }
 }
+
+tags = {
+  Project = "macos-iac"
+  Owner   = "nakib"
+  Test    = "pr-workflow"
+}
