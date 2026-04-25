@@ -11,7 +11,7 @@ output "account_id" {
 module "munki_repo" {
   source = "./modules/s3"
 
-  bucket_name = "munki-repo"
+  bucket_name = "nakib26-munki-repo"
   environment = "dev"
 
   tags = {
