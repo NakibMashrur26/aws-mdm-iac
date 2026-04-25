@@ -11,11 +11,12 @@ output "account_id" {
 module "munki_repo" {
   source = "./modules/s3"
 
-  bucket_name = "nakib26-munki-repo"
+  bucket_name = "nakib-munki-repo"
   environment = "dev"
 
   tags = {
     Project = "macos-iac"
     Owner   = "nakib"
+    Test    = "pr-workflow"
   }
 }
