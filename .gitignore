@@ -1,0 +1,16 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+*.tfvars
+crash.log
+override.tf
+
+# Secrets
+.env
+*.pem
+*.key
+
+# macOS
+.DS_Store
