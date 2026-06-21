@@ -14,7 +14,7 @@
       "configureZshAsDefault": true
     }
   },
-  "postCreateCommand": "apt-get install -y shellcheck && pip install pre-commit && pre-commit install",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y shellcheck && pip install pre-commit --break-system-packages && pre-commit install",
   "customizations": {
     "vscode": {
       "extensions": [
