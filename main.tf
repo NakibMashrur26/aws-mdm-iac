@@ -20,3 +20,16 @@ module "munki_repo" {
     Test    = "pr-workflow"
   }
 }
+
+
+module "scripts_repo" {
+  source = "./modules/s3"
+
+  bucket_name = "nakib-scripts-repo"
+  environment = "dev"
+
+  tags = {
+    Project = "macos-iac"
+    Owner   = "nakib"
+  }
+}
